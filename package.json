@@ -1,6 +1,7 @@
 {
   "name": "push-up-counter-typescript",
   "private": true,
+  "homepage": "https://tig56.github.io/push-up-counter_TypeScript",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
