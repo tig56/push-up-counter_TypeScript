@@ -18,7 +18,7 @@ React + TypeScriptで作成した、簡単操作の「腕立て伏せカウン�
 
 ## スクリーンショット
 ![image](https://github.com/user-attachments/assets/e4611e28-b139-4570-b05d-22300a5a1cb0)
-![image](https://github.com/user-attachments/assets/2e9e57c9-4985-4483-9101-e13484981c97)
+![image](https://github.com/user-attachments/assets/0ba7a0f0-1b06-4097-b127-281d00b093d3)
 
 ---
 
