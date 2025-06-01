@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# アプリ名
+腕立てカウンターアプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 概要
+React + TypeScriptで作成した、簡単操作の「腕立て伏せカウンター」アプリです。
+カウント・時間・消費カロリーを自動で記録し、ローカルストレージに保存されます。  
+記録の一覧表示・削除も可能です。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 特徴
+- 10秒間のチャレンジタイム中に、腕立ての回数をカウント
+- 消費カロリーを自動計算（1回あたり0.42 kcal）
+- タップまたはクリックでカウント（モバイル対応）
+- ゲーム終了後はスコアと日付が記録され、履歴一覧で表示
+- ローカルストレージで記録を永続化
+- 音声フィードバック（スタート音・カウント音）
 
-## Expanding the ESLint configuration
+## スクリーンショット
+![image](https://github.com/user-attachments/assets/e4611e28-b139-4570-b05d-22300a5a1cb0)
+![image](https://github.com/user-attachments/assets/2e9e57c9-4985-4483-9101-e13484981c97)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 使用技術
+- React 18
+- TypeScript
+- HTML/CSS（レスポンシブ対応）
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+##　リンク先
+https://tig56.github.io/push-up-counter_TypeScript/
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
